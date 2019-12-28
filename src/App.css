@@ -1,22 +1,57 @@
 .App {
+  flex: 1;
+}
+
+body {
+  flex: 1;
+}
+
+.total {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.play {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.activities {
+  list-style-type: upper-roman;
+  float: left;
+}
+
+div.activity {
+  flex: 1;
+  min-width: 320px;
+}
+
+div.play {
+  flex: 4;
+  order: 2;
+  padding: 15px;
+  float: right;
+  background-color: yellow;
+}
+
+div.record {
+  flex: 1;
+  padding: 3px;
+  min-width: 280px;
+  border: 1px solid black;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+div.selections {
+  flex: 1;
+  min-width: 256px;
+  order: 1;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+button.activities {
+  display: block;
+  padding: 5px 5px;
+  margin: 5px;
+  width:150px
 }
